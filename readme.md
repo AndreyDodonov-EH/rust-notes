@@ -1,0 +1,22 @@
+- Rust has packets (crates)
+- Rust's backend is LLVM
+- Rust strings are UTF-8 encoded and can contain any Unicode character
+- Rust has [hygienic macros](https://en.wikipedia.org/wiki/Hygienic_macro), println! is an example of this 
+- Everything is constant by default, you need to add `mut` to make a variable
+- Compile time memory safety
+- Lack of undefined runtime behavior
+- Static memory management at compile time:
+    - No uninitialized variables.
+    - No memory leaks (mostly, see notes).
+    - No double-frees.
+    - No use-after-free.
+    - No NULL pointers.
+    - No forgotten locked mutexes.
+    - No data races between threads.
+    - No iterator invalidation.
+- No undefined behavior at runtime:
+    - Array access is bounds checked.
+    - Integer overflow is defined (panic or wrap-around).
+- _Actionable_ feedback on errors
+- Good Language Server Protocol implementation (rust-analyzer)
+- `char` is 32 bits wid
