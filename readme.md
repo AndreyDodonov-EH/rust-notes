@@ -20,3 +20,6 @@
 - _Actionable_ feedback on errors
 - Good Language Server Protocol implementation (rust-analyzer)
 - `char` is 32 bits wid
+- possible to have underscores and types directly in constant, e.g. `1_000`, `123_i64`, or, less nice `1_23i32`
+- variable shadowing is possible (i.e. redefining in the same scope)... Strange
+- array length is part of it's type: [u8; 3] and [u8; 4] are different types
